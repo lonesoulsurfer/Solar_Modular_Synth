@@ -1,4 +1,4 @@
-# Solar_Modular_Synth
+# Solar Modular Synth
  A modular synth based around Arduino
 First and foremost - a big shoutout to the creative team over at [Bleep Labs](https://bleeplabs.com/) for the original build which is called the Neblophone.
 
