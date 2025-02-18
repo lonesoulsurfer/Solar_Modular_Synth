@@ -7,10 +7,15 @@ I wanted to be able to add some playability to the little modular synth that I'm
 The main changes that I have implemented are; I changed the stylus style keyboard over to actual momentary switches, I designed a front panel and custom PCB which can be used in Eurorack modules (or as a fun standalone synth) and lastly, added 2 sync in's so you can connect it to other synths.
 
 So what are the features of the little synth?
+
 – Eight waveforms
+
 – Light controlled (Vactrol) analog low-pass filter with five adjustable LFO LED modes.
+
 – Perfect tuning across six octaves.
+
 – Adjustable temperament and key.
+
 – Six arpeggio modes with adjustable rate.
 
 It's the first time that I have utilized cherry MX switches and I'm so glad that I used them! 
