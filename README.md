@@ -22,15 +22,15 @@ So what are the features of the little synth?
 
 The main goal with building this module is to create my own 'simple to build' modular synth. I wanted to keep everything as easy as possble with each module built with the following aims:
 
-Can be powered by 9V (and 12V)
+-   Can be powered by 9V (and 12V)
 
-Easy to build with minimum components
+-   Easy to build with minimum components
 
-Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
+-   Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
 
-Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
+-   Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
 
-Has to sound great!
+-   Has to sound great!
 
 It's the first time that I have utilized cherry MX switches and I'm so glad that I used them! 
 Lastly, as I have mentioned above, Solar makes a fun standalone synth and has been designed to be able to fit in Eurorack modules and powered via a Eurorack power supply!
