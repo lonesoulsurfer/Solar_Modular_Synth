@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/dc6058bd-3155-496d-bfef-80204dc4010d)
+
+![4](https://github.com/user-attachments/assets/a08c3928-b2ac-4c00-81f6-b0257c11f4bf)
 
 
 # Solar Modular Synth
