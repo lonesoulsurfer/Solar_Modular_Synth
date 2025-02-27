@@ -1,5 +1,5 @@
 
-![5](https://github.com/user-attachments/assets/244f68b0-9311-44dc-baee-0a5efdf670df)
+![g](https://github.com/user-attachments/assets/0c9273e1-6546-44d8-835b-b5c3f02ac65d)
 
 # Solar Modular Synth
  A modular synth based around Arduino
