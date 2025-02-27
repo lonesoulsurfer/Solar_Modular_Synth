@@ -41,3 +41,6 @@ Lastly, as I have mentioned above, Solar makes a fun standalone synth and has be
 I have also completed a step by step guide which you can find on Instructables
 
 YouTube vid can be found below
+
+![e](https://github.com/user-attachments/assets/1bae4e8f-a08e-4651-851d-24a50ec8612f)
+
