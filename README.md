@@ -1,47 +1,102 @@
+# Solar: Arduino synth for Eurorack, based on the Nebulophone
 
-![g](https://github.com/user-attachments/assets/0c9273e1-6546-44d8-835b-b5c3f02ac65d)
+Solar is a synth with a keyboard of Cherry MX key switches. It uses an Arduino Nano. It is based on the [Nebulophone](https://bleeplabs.com/?p=2284) by Bleep Labs. You can use it in a Eurorack case or as a standalone synth.
 
-# Solar Modular Synth
- A modular synth based around Arduino
-First and foremost - a big shoutout to the creative team over at [Bleep Labs](https://bleeplabs.com/) for the original build which is called the Neblophone.
+![Solar](https://github.com/user-attachments/assets/0c9273e1-6546-44d8-835b-b5c3f02ac65d)
 
-I wanted to be able to add some playability to the little modular synth that I'm putting together and after a extensive search on Google I stumbled on the Neblophone which I have re-named 'Solar' for this build.
+## Build guide and video
 
-The main changes that I have implemented are; I changed the stylus style keyboard over to actual momentary switches, I designed a front panel and custom PCB which can be used in Eurorack modules (or as a fun standalone synth) and lastly, added 2 sync inputs so you can connect it to other synths.
+- Step-by-step build guide on Instructables: [Solar - Arduino Based Synth](https://www.instructables.com/Solar-Arduino-Based-Synth/)
+- Video on YouTube: [Solar](https://www.youtube.com/watch?v=ggaYos6u02A)
 
-The sync inputs can be a little fiddily but once tuned in work great.  However, you don;t have to sync in the synth as you can just play it over the top of whatever you are jamming to.
+## Features
 
-So what are the features of the little synth?
+- 8 waveforms
+- Analogue low-pass filter, controlled by light (vactrol), with 5 LFO LED modes
+- Correct tuning across 6 octaves
+- Adjustable temperament and key
+- 6 arpeggio modes with adjustable rate
+- 2 sync inputs, to play with other synths
 
-– Eight waveforms
+You do not have to sync Solar. You can also play it freely over the music of other synths.
 
-– Light controlled (Vactrol) analog low-pass filter with five adjustable LFO LED modes.
+## Changes from the Nebulophone
 
-– Perfect tuning across six octaves.
+- I replaced the stylus keyboard with Cherry MX key switches.
+- I designed a new PCB and a front panel. They fit in a Eurorack case.
+- I added 2 sync inputs.
 
-– Adjustable temperament and key.
+> **Note:** The sync inputs can need some adjustment, but after that they operate well.
 
-– Six arpeggio modes with adjustable rate.
+## What you need
 
-The main goal with building this module is to create my own 'simple to build' modular synth. I wanted to keep everything as easy as possble with each module built with the following aims:
+### Hardware
 
--   Can be powered by 9V (and 12V)
+- All parts are in the [parts list](Solar%20-%20Parts%20List.pdf).
+- The schematic is [schematic.png](schematic.png).
+- The Gerber files for the PCB and the front panel are in [Gerber Files](Gerber%20Files/). You can send them to a PCB maker.
+- Power: 9 V or 12 V, or a Eurorack power supply.
 
--   Easy to build with minimum components
+### Software
 
--   Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
+- Arduino IDE
+- An Arduino Nano
 
--   Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
+You do not need to install libraries.
 
--   Has to sound great!
+## Upload the firmware
 
-It's the first time that I have utilized cherry MX switches and I'm so glad that I used them! 
-Lastly, as I have mentioned above, Solar makes a fun standalone synth and has been designed to be able to fit in Eurorack modules and powered via a Eurorack power supply!
+1. Download this repository. Click **Code → Download ZIP**, then extract the ZIP file.
+2. Open `Software/Solar - Arduino/Solar - Arduino.ino` in the Arduino IDE.
+3. Connect the Arduino Nano to your computer with a USB cable.
+4. In the **Tools** menu, set these values:
+   - **Board:** Arduino Nano
+   - **Processor:** ATmega328P
+   - **Port:** the COM port of your Nano
+5. Click **Upload**.
+6. Wait for the message **Done uploading**.
 
-I have also completed a step by step guide which you can find on Instructables
+> **Note:** If the upload fails, set **Processor** to **ATmega328P (Old Bootloader)**, then try again. Many clone Nano boards need this setting.
 
-YouTube vid can be found below
-https://www.youtube.com/watch?v=ggaYos6u02A
+## How to play
 
-![e](https://github.com/user-attachments/assets/1bae4e8f-a08e-4651-851d-24a50ec8612f)
+The Instructables guide tells you how to play Solar.
 
+## Files in this repository
+
+| Folder or file | Contents |
+|----------------|----------|
+| `Software/Solar - Arduino/` | Firmware (Nebulophone code) |
+| `Eagle Files/` | Eagle files for the PCB |
+| `Front Panel Design/` | KiCad, Inkscape and image files for the front panel |
+| `Gerber Files/` | Gerber files for the PCB and the front panel, ready to order |
+| `Solar - Parts List.pdf` | Parts list |
+| `schematic.png` | Schematic |
+
+## Why I made it
+
+I want to make my own modular synth that is simple to build. Each module has these aims:
+
+- It operates from 9 V (and 12 V).
+- It is easy to build, with a minimum of components.
+- It uses an Arduino, to keep the parts count low and everything in tune.
+- It fits in any Eurorack case, and it can use normal Eurorack power.
+- It sounds good.
+
+This was my first project with Cherry MX switches. They feel very good to play.
+
+![Solar module](https://github.com/user-attachments/assets/1bae4e8f-a08e-4651-851d-24a50ec8612f)
+
+## Credits
+
+- Original synth design and code: the [Nebulophone](https://bleeplabs.com/?p=2284) by Dr. Bleep (John-Mike Reed), [Bleep Labs](https://bleeplabs.com/). Thank you, Bleep Labs.
+- PCB, front panel, keyboard and sync inputs: Marcus ([lonesoulsurfer](https://github.com/lonesoulsurfer)).
+
+## Support
+
+Do you like this project? You can support my work on [GitHub Sponsors](https://github.com/sponsors/lonesoulsurfer).
+
+## Licence
+
+- **Hardware** (PCB, front panel and Gerber files): [CERN Open Hardware Licence v2, Strongly Reciprocal](LICENSE). You can make, change and sell boards. If you share or sell a changed design, you must also share the changed design files under the same licence. Copyright (c) 2025 Marcus (lonesoulsurfer).
+- **Firmware** (`Software/`): the Nebulophone code by Bleep Labs. Bleep Labs does not give a licence for this code. The CERN licence does **not** apply to it. Before you use the code for a commercial purpose, ask [Bleep Labs](https://bleeplabs.com/) for permission.
